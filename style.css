@@ -1,0 +1,113 @@
+/* ----- || General || ----- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Be Vietnam Pro";
+}
+
+body {
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- || Header & Navigation || ----- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+menu ul {
+  display: flex;
+  gap: 2rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+menu a {
+  color: black;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgb(188, 188, 188);
+  text-underline-offset: 0.25rem;
+}
+
+menu a:hover {
+  text-decoration-color: rgb(0, 0, 0);
+  text-underline-offset: 0.15rem;
+  transition: 100ms;
+}
+
+/* ----- || Hero Area || ----- */
+
+.hero {
+  display: flex;
+  max-width: 100vw;
+  max-height: 100vh;
+  position: relative;
+  _justify-content: center;
+  _align-items: center;
+  overflow: hidden;
+}
+
+.hero img {
+  max-width: 50vw;
+  height: auto;
+  object-fit: fill;
+  object-position: top center;
+}
+
+h2 {
+  font-family: "Abyssinica SIL";
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  top: 50%;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  line-height: 135%;
+}
+
+svg {
+  position: absolute;
+  bottom: 1rem;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  fill: white;
+  width: 2rem;
+  height: 2rem;
+}
